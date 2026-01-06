@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 function Footer() {
     return (
         //footer có background light và text center
-        <footer className="bg-light text-center py-4 mt-auto">
+        <footer className="app-footer text-center py-4 mt-auto">
             {/* Sử dụng Container để căn chỉnh nội dung footer, có 1 dòng, 3 cột: Avatar, Tên tác giả, Thông tin liên hệ */}
             <Container fluid>
                 <Row className="align-items-center">
@@ -18,7 +18,7 @@ function Footer() {
                         <small>All rights reserved.</small>
                     </Col>
                     <Col xs={2}>
-                        <a href="mailto:traltb@fpt.edu.vn">traltb@fpt.edu.vn</a>
+                        <a href="mailto:hienhmde@fpt.edu">hienhmde@fpt.edu.vn</a>
                     </Col>
                 </Row>
             </Container>

@@ -1,56 +1,57 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
+/* ===== App Layout ===== */
 .app-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* ===== Main Content ===== */
 .content {
   flex: 1;
-  padding: 20px;
+  padding: calc(var(--gap) * 3) 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Container (use .container-max from index.css) */
+.page-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Typography */
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Card style */
+.card-box {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  .content {
+    padding: calc(var(--gap) * 4) 2rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.25rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
