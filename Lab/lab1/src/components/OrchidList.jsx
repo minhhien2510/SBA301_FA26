@@ -7,7 +7,7 @@ function OrchidList({ orchids }) {
   return (
     <Row className="g-4">
       {orchids.map((orchid) => (
-        <Col md={4} key={orchid.id}>
+        <Col md={3} key={orchid.id}>
           <Orchid orchid={orchid} />
         </Col>
       ))}
