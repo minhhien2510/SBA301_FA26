@@ -45,7 +45,7 @@ function OrchidDetail() {
 
           <Card.Text>{orchid.description}</Card.Text>
 
-          <Link to="/">
+          <Link to="/home">
             <Button variant="secondary">⬅ Back</Button>
           </Link>
         </Card.Body>

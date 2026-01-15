@@ -5,13 +5,14 @@ import { Link } from "react-router-dom"; // import Link
 
 function Orchid({ orchid }) {
   return (
-    <Card className="shadow-sm h-100">
+    <Card className="h-100 shadow-sm w-100">
       <Card.Img
         variant="top"
         src={orchid.image}
         alt={orchid.orchidName}
         style={{ height: "200px", objectFit: "cover" }}
       />
+
 
       <Card.Body>
         <Card.Title className="d-flex justify-content-between">

@@ -14,9 +14,9 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault();
         if (username === "admin" && password === "123456") {
-            // login success -> mark authenticated and redirect to orchidlist
+            // login success -> mark authenticated and redirect to home
             localStorage.setItem("auth", "true");
-            navigate("/orchidlist");
+            window.location.href = "/";
         } else {
             setError("Invalid username or password");
         }

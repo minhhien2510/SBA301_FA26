@@ -1,6 +1,6 @@
 // src/pages/Contact.jsx
 import { useState } from "react";
-import { Form, Button, Row, Col, InputGroup } from "react-bootstrap";
+import { Form, Button, Row, Col, InputGroup,Container  } from "react-bootstrap";
 import ConfirmModal from "../components/ConfirmModal";
 
 function Contact() {
@@ -81,7 +81,8 @@ function Contact() {
   };
 
   return (
-    <div className="page-container">
+    <Container className="py-4">
+      <div className="page-container">
       <h1 className="page-title">Contact Us</h1>
 
       <div className="card-box">
@@ -217,6 +218,7 @@ function Contact() {
         }
       />
     </div>
+    </Container>
   );
 }
 

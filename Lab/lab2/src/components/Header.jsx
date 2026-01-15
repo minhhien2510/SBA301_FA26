@@ -17,7 +17,6 @@ function Header({ searchText, onSearchChange }) {
         <Navbar.Collapse>
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/orchidlist">OrchidList</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
             <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
           </Nav>

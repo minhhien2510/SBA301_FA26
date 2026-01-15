@@ -1,9 +1,14 @@
+import { useOutletContext } from "react-router-dom";
 import OrchidList from "../components/OrchidList";
 
-function Home({ searchText }) {
+function Home() {
+  const { searchText } = useOutletContext();
+
   return (
     <>
-      <h2 className="text-center mb-4">🌸 Orchid Collection</h2>
+      <h2 className="text-center mb-4">
+        🌸 Orchid Collection
+      </h2>
       <OrchidList searchText={searchText} />
     </>
   );
