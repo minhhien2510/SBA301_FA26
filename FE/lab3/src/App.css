@@ -1,0 +1,74 @@
+/* ===== App Layout ===== */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Main Content ===== */
+.content {
+  flex: 1;
+  padding: calc(var(--gap) * 3) 1rem;
+}
+
+/* Container (use .container-max from index.css) */
+.page-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Typography */
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Card style */
+.card-box {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: calc(var(--gap) * 4) 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.25rem;
+  }
+}
